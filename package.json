@@ -2,22 +2,53 @@
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
+    "startNative": "react-native start",
+    "startServer": "node ./server/index.js",
+    "server": "nodemon ./server/index.js",
+    "gesture": "expo install react-native-gesture-handler",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject"
   },
   "dependencies": {
-    "expo": "~38.0.8",
+    "@react-native-community/masked-view": "0.1.10",
+    "@react-native-community/viewpager": "^4.1.1",
+    "@react-navigation/bottom-tabs": "^5.7.2",
+    "@react-navigation/native": "^5.7.1",
+    "@react-navigation/stack": "^5.7.1",
+    "axios": "^0.19.2",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-syntax-trailing-function-commas": "^6.22.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-react-native": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "expo": "^38.0.8",
     "expo-status-bar": "^1.0.2",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "moment": "^2.27.0",
+    "mysql": "^2.18.1",
     "react": "~16.11.0",
     "react-dom": "~16.11.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz",
-    "react-native-web": "~0.11.7"
+    "react-native": "^0.62.2",
+    "react-native-fast-image": "^8.3.2",
+    "react-native-gesture-handler": "~1.6.0",
+    "react-native-image-picker": "^2.3.3",
+    "react-native-material-dropdown": "^0.11.1",
+    "react-native-navigation-bar": "^0.2.1",
+    "react-native-reanimated": "~1.9.0",
+    "react-native-safe-area-context": "~3.0.7",
+    "react-native-screens": "~2.9.0",
+    "react-native-web": "^0.11.7",
+    "react-native-webpack": "^0.1.1",
+    "react-navigation": "^4.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",
-    "babel-preset-expo": "~8.1.0"
+    "babel-preset-expo": "~8.1.0",
+    "eslint-import-resolver-babel-module": "^5.1.0",
+    "nodemon": "^2.0.4"
   },
   "private": true
 }
